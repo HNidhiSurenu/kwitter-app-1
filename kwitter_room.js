@@ -1,14 +1,16 @@
 
 //ADD YOUR FIREBASE LINKS HERE
 var firebaseConfig = {
-      apiKey: "AIzaSyA0ycMsUWdFa4KvEwXGQXDjYHaBGhR_Kww",
-      authDomain: "kwitter-37aab.firebaseapp.com",
-      databaseURL: "https://kwitter-37aab-default-rtdb.firebaseio.com",
-      projectId: "kwitter-37aab",
-      storageBucket: "kwitter-37aab.appspot.com",
-      messagingSenderId: "499547982542",
-      appId: "1:499547982542:web:76b4a19e0cc52f14ba9e9f"
+      apiKey: "AIzaSyAKc__xrtM-RiTNh_WeKI3g_BF-emgUqto",
+      authDomain: "lets-chat-d2ba0.firebaseapp.com",
+      projectId: "lets-chat-d2ba0",
+      storageBucket: "lets-chat-d2ba0.appspot.com",
+      messagingSenderId: "617648217649",
+      appId: "1:617648217649:web:be29ceb30d016b85a9bf10"
     };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
